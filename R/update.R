@@ -4,7 +4,7 @@
 #' dependencies) are up-to-date, and will install after an interactive
 #' confirmation.
 #'
-#' @inheritParams ojoverse_deps
+#' @inheritParams ojoverse_dependencies
 #' @export
 #' @examples
 #' \dontrun{
@@ -12,7 +12,7 @@
 #' }
 ojoverse_update <- function(recursive = FALSE, repos = getOption("repos")) {
 
-  deps <- ojoverse_deps(recursive, repos)
+  deps <- ojoverse_dependencies(recursive, repos)
   behind <- dplyr::filter(deps, behind)
 
   if (nrow(behind) == 0) {
@@ -42,7 +42,7 @@ ojoverse_update <- function(recursive = FALSE, repos = getOption("repos")) {
   invisible()
 }
 
-#' Get a situation report on the ojoverse
+#' Get a status report on the ojoverse
 #'
 #' This function gives a quick overview of the versions of R and RStudio as
 #' well as all ojoverse packages. It's primarily designed to help you get
@@ -50,14 +50,14 @@ ojoverse_update <- function(recursive = FALSE, repos = getOption("repos")) {
 #' a problem.
 #'
 #' @export
-ojoverse_sitrep <- function() {
+ojoverse_status <- function() {
   cli::cat_rule("R & RStudio")
   if (rstudioapi::isAvailable()) {
     cli::cat_bullet("RStudio: ", rstudioapi::getVersion())
   }
   cli::cat_bullet("R: ", getRversion())
 
-  deps <- ojoverse_deps()
+  deps <- ojoverse_dependencies()
   package_pad <- format(deps$package)
   packages <- ifelse(
     deps$behind,
@@ -78,7 +78,7 @@ ojoverse_sitrep <- function() {
 #' @param repos The repositories to use to check for updates.
 #'   Defaults to \code{getOption("repos")}.
 #' @export
-ojoverse_deps <- function(recursive = FALSE, repos = getOption("repos")) {
+ojoverse_dependencies <- function(recursive = FALSE, repos = getOption("repos")) {
   pkgs <- utils::available.packages(repos = repos)
   deps <- tools::package_dependencies("ojoverse", pkgs, recursive = recursive)
 

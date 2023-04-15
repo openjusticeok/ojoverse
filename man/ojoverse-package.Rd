@@ -4,9 +4,9 @@
 \name{ojoverse-package}
 \alias{ojoverse}
 \alias{ojoverse-package}
-\title{ojoverse: What the Package Does (One Line, Title Case)}
+\title{ojoverse: All the Open Justice Oklahoma R Tools in One Place}
 \description{
-What the package does (one paragraph).
+This package is a collection of all the Open Justice Oklahoma R tools. It is meant to be used for interactive workflows, not as a dependency for other packages. Fully inspired, and mostly written, by developers of the [{tidyverse}](https://github.com/tidyverse/tidyverse) package.
 }
 \author{
 \strong{Maintainer}: Brancen Gregory \email{brancengregory@gmail.com}

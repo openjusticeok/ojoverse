@@ -1,16 +1,24 @@
 Package: ojoverse
-Title: What the Package Does (One Line, Title Case)
+Title: All the Open Justice Oklahoma R Tools in One Place
 Version: 0.1.0
 Authors@R: 
     person("Brancen", "Gregory", , "brancengregory@gmail.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: MIT + file LICENSE
+Description:
+    This package is a collection of all the Open Justice Oklahoma R tools. 
+    It is meant to be used for interactive workflows, not as a dependency for other packages.
+    Fully inspired, and mostly written, by developers of the [{tidyverse}](https://github.com/tidyverse/tidyverse) package.
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Imports: 
+    cli,
+    dplyr,
     ojodb,
-    ojoslackr
+    ojoslackr,
+    purrr,
+    rlang,
+    rstudioapi,
+    tibble
 Remotes:
     openjusticeok/ojodb,
     openjusticeok/ojoslackr

@@ -5,5 +5,5 @@
     Output
       -- Conflicts ------------------------------------------- ojoverse_conflicts() --
       x ::() masks 
-      i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+      
 
