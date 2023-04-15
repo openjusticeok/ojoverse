@@ -1,6 +1,6 @@
 Package: ojoverse
 Title: All the Open Justice Oklahoma R Tools in One Place
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: 
     person("Brancen", "Gregory", , "brancengregory@gmail.com", role = c("aut", "cre"))
 Description:
