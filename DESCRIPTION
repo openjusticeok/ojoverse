@@ -23,7 +23,7 @@ Imports:
     tibble
 Remotes:
     openjusticeok/ojodb,
-    openjusticeok/ojoslackr
+    openjusticeok/ojoslackr,
     openjusticeok/ojoutils
 Suggests: 
     knitr,
