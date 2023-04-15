@@ -7,4 +7,5 @@
 ignore_unused_imports <- function() {
   ojodb::ojo_connect
   ojoslackr::ojo_watermark
+  ojoutils::limit
 }
