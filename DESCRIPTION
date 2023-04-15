@@ -16,6 +16,7 @@ Imports:
     dplyr,
     ojodb,
     ojoslackr,
+    ojoutils,
     purrr,
     rlang,
     rstudioapi,
@@ -23,6 +24,7 @@ Imports:
 Remotes:
     openjusticeok/ojodb,
     openjusticeok/ojoslackr
+    openjusticeok/ojoutils
 Suggests: 
     knitr,
     mockr,

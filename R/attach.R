@@ -1,4 +1,4 @@
-core <- c("ojodb", "ojoslackr")
+core <- c("ojodb", "ojoslackr", "ojoutils")
 
 core_unloaded <- function() {
   search <- paste0("package:", core)
