@@ -8,4 +8,9 @@ ignore_unused_imports <- function() {
   ojodb::ojo_connect
   ojoslackr::ojo_watermark
   ojoutils::limit
+  forcats::as_factor
+  ggplot2::ggplot
+  readr::read_csv
+  stringr::str_c
+  tidyr::nest
 }
