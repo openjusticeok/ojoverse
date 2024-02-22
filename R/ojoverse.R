@@ -6,6 +6,7 @@
 #   All declared Imports should be used.
 ignore_unused_imports <- function() {
   ojodb::ojo_connect
+  ojoregex::regex_pre_clean
   ojoslackr::ojo_watermark
   ojoutils::limit
   forcats::as_factor

@@ -1,6 +1,6 @@
 Package: ojoverse
 Title: All the Open Justice Oklahoma R Tools in One Place
-Version: 0.3.0
+Version: 0.4.0
 Authors@R: 
     person("Brancen", "Gregory", , "brancengregory@gmail.com", role = c("aut", "cre"))
 Description:
@@ -17,6 +17,7 @@ Imports:
     forcats,
     ggplot2,
     ojodb,
+    ojoregex,
     ojoslackr,
     ojoutils,
     purrr,
@@ -28,6 +29,7 @@ Imports:
     tidyr
 Remotes:
     openjusticeok/ojodb,
+    openjusticeok/ojoregex,
     openjusticeok/ojoslackr,
     openjusticeok/ojoutils
 Suggests: 
