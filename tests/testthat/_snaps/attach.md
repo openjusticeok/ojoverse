@@ -9,8 +9,8 @@
       cat(ojoverse_attach_message(core))
     Output
       -- Attaching core ojoverse packages -------------------------- ojoverse 1.0.0 --
-      v ojodb     1.0.0     v ojoutils  1.0.0
-      v ojoslackr 1.0.0     
+      v ojodb     1.0.0     v ojoslackr 1.0.0
+      v ojoregex  1.0.0     v ojoutils  1.0.0
 
 # highlights dev versions in red
 
